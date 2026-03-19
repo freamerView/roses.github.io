@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Розы Брянск | Телефон, заказать доставку роз</title>
+  <meta name="description" content="Контакты Розы Брянск: телефон, WhatsApp, Telegram, адрес. Режим работы. Закажите доставку роз и букетов по Брянску.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="" id="canonical-url">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Контакты — Розы Брянск">
+  <meta property="og:description" content="Телефон, адрес, режим работы. Доставка роз в Брянске.">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:image" content="" id="og-image">
+  <meta name="theme-color" content="#880e4f">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Контакты — Розы Брянск">
+  <meta name="twitter:description" content="Телефон, адрес, режим работы. Доставка роз в Брянске.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Розы Брянск</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Каталог</a>
+        <a href="about.html" class="nav-link">О нас</a>
+        <a href="contacts.html" class="nav-link active">Контакты</a>
+      </nav>
+      <button type="button" class="cart-btn" id="cartBtn" aria-label="Корзина">
+        <span class="cart-icon"></span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main main-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Контакты</h1>
+      </div>
+    </section>
+
+    <section class="contacts-section">
+      <div class="container">
+        <div class="contacts-grid">
+          <div class="contacts-info">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-item">
+              <span class="contact-label">Телефон</span>
+              <a href="tel:+74832550000">+7 (4832) 55-00-00</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/74832550000" target="_blank" rel="noopener">+7 (4832) 55-00-00</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Telegram</span>
+              <a href="https://t.me/roses_bryansk" target="_blank" rel="noopener">@roses_bryansk</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@roses-bryansk.ru">info@roses-bryansk.ru</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Адрес</span>
+              <p>г. Брянск, ул. Красноармейская, д. 42</p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Режим работы</span>
+              <p>Ежедневно: 8:00 – 20:00<br>Приём заказов на доставку — круглосуточно на сайте</p>
+            </div>
+          </div>
+          <div class="contacts-map-wrap">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=34.3719%2C53.2521&z=15&l=map&pt=34.3719,53.2521"
+              title="Карта: Розы Брянск"
+              class="contacts-map"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p class="map-note">Карта показана условно. Точный адрес и время визита уточняйте по телефону.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="policy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </div>
+        <p class="footer-copy">© Розы Брянск</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-footer">
+        <form class="cart-form" id="cartForm" action="https://formspree.io/f/xeqwknqz" method="POST">
+          <input type="hidden" name="_subject" value="Заказ букетов — Розы Брянск">
+          <input type="hidden" name="order_items" id="orderItemsInput">
+          <input type="hidden" name="order_total" id="orderTotalInput">
+          <input type="hidden" name="order_discount" id="orderDiscountInput">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="text" name="address" placeholder="Адрес доставки">
+          <textarea name="comment" placeholder="Время и комментарий" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seo.js"></script>
+</body>
+</html>

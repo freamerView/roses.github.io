@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас — Розы Брянск | Доставка роз и букетов</title>
+  <meta name="description" content="О сервисе доставки роз в Брянске: свежие цветы, доставка в день заказа, подарочная упаковка. Работаем с 2018 года.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="" id="canonical-url">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="О нас — Розы Брянск">
+  <meta property="og:description" content="Доставка роз и букетов по Брянску. Свежие цветы, в день заказа.">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:image" content="" id="og-image">
+  <meta name="theme-color" content="#880e4f">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="О нас — Розы Брянск">
+  <meta name="twitter:description" content="О сервисе доставки роз в Брянске: свежие цветы, доставка в день заказа.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Розы Брянск</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Каталог</a>
+        <a href="about.html" class="nav-link active">О нас</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+      </nav>
+      <button type="button" class="cart-btn" id="cartBtn" aria-label="Корзина">
+        <span class="cart-icon"></span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main main-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">О нас</h1>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container narrow">
+        <p class="about-lead">
+          «Розы Брянск» — сервис доставки свежих роз и букетов по Брянску и области. Мы работаем с проверенными поставщиками и доставляем цветы в день заказа, чтобы букет радовал как можно дольше.
+        </p>
+        <div class="about-blocks">
+          <div class="about-block">
+            <h2>Свежесть и качество</h2>
+            <p>Розы хранятся в холодильных камерах до момента сборки и доставки. Мы не продаём залежавшийся товар — только свежие срезы с гарантией стойкости при правильном уходе.</p>
+          </div>
+          <div class="about-block">
+            <h2>Доставка когда удобно</h2>
+            <p>Доставка по Брянску в удобный двухчасовой интервал. Заказы, оформленные до 14:00, доставляем в тот же день. Возможна срочная доставка — уточняйте по телефону или в мессенджере.</p>
+          </div>
+          <div class="about-block">
+            <h2>Любой повод</h2>
+            <p>Классические букеты из красных роз, микс-букеты, премиум-композиции в коробках, свадебная флористика и букеты невесты. Поможем подобрать букет под событие и бюджет.</p>
+          </div>
+        </div>
+        <p class="about-cta">
+          Есть вопросы? <a href="contacts.html">Свяжитесь с нами</a> — с радостью подберём букет и ответим на все вопросы.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="policy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </div>
+        <p class="footer-copy">© Розы Брянск</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-footer">
+        <form class="cart-form" id="cartForm" action="https://formspree.io/f/xeqwknqz" method="POST">
+          <input type="hidden" name="_subject" value="Заказ букетов — Розы Брянск">
+          <input type="hidden" name="order_items" id="orderItemsInput">
+          <input type="hidden" name="order_total" id="orderTotalInput">
+          <input type="hidden" name="order_discount" id="orderDiscountInput">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="text" name="address" placeholder="Адрес доставки">
+          <textarea name="comment" placeholder="Время и комментарий" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seo.js"></script>
+</body>
+</html>

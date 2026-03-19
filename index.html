@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Розы Брянск — доставка роз и букетов по Брянску</title>
+  <meta name="description" content="Доставка свежих роз и букетов в Брянске. Классические и премиум букеты, свадебная флористика, доставка в день заказа. Закажите букет онлайн.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="" id="canonical-url">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Розы Брянск — доставка роз и букетов">
+  <meta property="og:description" content="Доставка свежих роз и букетов по Брянску. В день заказа, подарочная упаковка.">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:image" content="" id="og-image">
+  <meta name="theme-color" content="#880e4f">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Розы Брянск — доставка роз">
+  <meta name="twitter:description" content="Доставка роз и букетов по Брянску. Свежие цветы, в день заказа.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header header-glass">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Розы Брянск</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Каталог</a>
+        <a href="about.html" class="nav-link">О нас</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+      </nav>
+      <button type="button" class="cart-btn" id="cartBtn" aria-label="Корзина">
+        <span class="cart-icon"></span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero hero-soft" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-chips" aria-label="Коротко о сервисе">
+            <span class="chip">Свежие розы</span>
+            <span class="chip">Доставка сегодня</span>
+            <span class="chip">Открытка в подарок</span>
+          </div>
+          <h1 class="hero-title">Доставка роз и букетов по Брянску</h1>
+          <p class="hero-utp">Нежные букеты, которые хочется обнять. Соберём композицию под повод и бюджет, аккуратно упакуем и доставим в удобный интервал — с заботой о каждом лепестке.</p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary btn-hero">Выбрать букет</a>
+            <a href="#consult" class="btn btn-hero-outline">Нужна помощь</a>
+          </div>
+          <div class="hero-notes">
+            <div class="note-card">
+              <span class="note-title">Интервалы доставки</span>
+              <span class="note-text">каждые 2 часа</span>
+            </div>
+            <div class="note-card">
+              <span class="note-title">Уход</span>
+              <span class="note-text">инструкция в комплекте</span>
+            </div>
+            <div class="note-card">
+              <span class="note-title">Фото перед отправкой</span>
+              <span class="note-text">по запросу</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrap hero-collage">
+          <div class="hero-collage-card hero-collage-card-main">
+            <img src="images/hero.jpg" alt="Букет роз" class="hero-image" id="heroImage" width="480" height="480">
+            <div class="hero-image-placeholder" id="heroPlaceholder" aria-hidden="true">
+              <span class="hero-placeholder-text">Букет роз</span>
+            </div>
+          </div>
+          <div class="hero-collage-card hero-collage-card-float" aria-hidden="true">
+            <div class="hero-mini">
+              <span class="hero-mini-title">Мини‑заказ</span>
+              <span class="hero-mini-text">Добавьте букет в корзину и оформите доставку за 1 минуту</span>
+              <a class="btn btn-outline btn-mini" href="#catalog">Открыть каталог</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="catalog-controls catalog-controls-soft">
+          <div class="catalog-head">
+            <div>
+              <h2 class="section-title" id="catalog-heading">Каталог</h2>
+              <p class="catalog-seo-text">Классика, премиум, свадебные композиции и мини‑подарки. Выберите категорию и добавьте букет в корзину — оформление займёт минуту.</p>
+            </div>
+            <div class="catalog-head-hint" aria-label="Подсказка">
+              <span class="hint-pill">Нажмите «Подробнее», чтобы увидеть описание</span>
+              <span class="hint-pill">Кнопка «✓» добавляет ещё 1 букет</span>
+            </div>
+          </div>
+          <div class="filters">
+            <button type="button" class="filter-btn active" data-category="all">Все</button>
+            <button type="button" class="filter-btn" data-category="classic">Классика</button>
+            <button type="button" class="filter-btn" data-category="premium">Премиум</button>
+            <button type="button" class="filter-btn" data-category="bouquet">Букеты</button>
+            <button type="button" class="filter-btn" data-category="wedding">Свадебные</button>
+            <button type="button" class="filter-btn" data-category="single">Мини и 1 роза</button>
+          </div>
+        </div>
+        <div class="catalog-grid" id="catalogGrid"></div>
+        <noscript>
+          <ul class="catalog-noscript" aria-label="Список букетов">
+            <li>25 красных роз «Классика»</li>
+            <li>51 роза «Роскошь»</li>
+            <li>101 роза «Легенда»</li>
+            <li>Букет «Нежность»</li>
+            <li>Букет «Свадебный»</li>
+            <li>7 роз «Мини» в коробке</li>
+            <li>Букет «Элегант»</li>
+            <li>Коробка «Сердце»</li>
+            <li>15 красных роз «Стандарт»</li>
+            <li>Букет невесты</li>
+            <li>1 роза в колбе</li>
+            <li>Букет «Радость»</li>
+          </ul>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="steps-section" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="steps-inner">
+          <div>
+            <h2 class="section-title" id="steps-heading">Как это работает</h2>
+            <p class="steps-lead">Без лишних звонков — но мы всегда рядом, если нужна помощь.</p>
+          </div>
+          <ol class="steps-list">
+            <li class="step-card">
+              <span class="step-num">01</span>
+              <span class="step-title">Выберите букет</span>
+              <span class="step-text">Откройте «Каталог», нажмите «+» или «Подробнее».</span>
+            </li>
+            <li class="step-card">
+              <span class="step-num">02</span>
+              <span class="step-title">Оформите доставку</span>
+              <span class="step-text">В корзине укажите телефон и адрес — мы уточним детали.</span>
+            </li>
+            <li class="step-card">
+              <span class="step-num">03</span>
+              <span class="step-title">Вручим красиво</span>
+              <span class="step-text">Аккуратная упаковка, открытка и бережная доставка.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages-section advantages-soft" aria-labelledby="advantages-heading">
+      <div class="container">
+        <div class="advantages-head">
+          <h2 class="section-title" id="advantages-heading">Нежный сервис</h2>
+          <p class="advantages-lead">Мы делаем так, чтобы букет выглядел идеально и доехал безопасно.</p>
+        </div>
+        <div class="advantages-grid advantages-grid-soft">
+          <div class="advantage-card advantage-card-soft">
+            <div class="advantage-icon" aria-hidden="true">🌸</div>
+            <h3>Свежесть</h3>
+            <p>Холодное хранение и сборка перед отправкой.</p>
+          </div>
+          <div class="advantage-card advantage-card-soft">
+            <div class="advantage-icon" aria-hidden="true">🚗</div>
+            <h3>Доставка сегодня</h3>
+            <p>Закажите до 14:00 — привезём в этот же день.</p>
+          </div>
+          <div class="advantage-card advantage-card-soft">
+            <div class="advantage-icon" aria-hidden="true">🎁</div>
+            <h3>Упаковка</h3>
+            <p>Лента, плёнка, коробка — под стиль и повод.</p>
+          </div>
+          <div class="advantage-card advantage-card-soft">
+            <div class="advantage-icon" aria-hidden="true">💬</div>
+            <h3>Флорист на связи</h3>
+            <p>Подберём букет, если вы не уверены в выборе.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" aria-labelledby="reviews-heading">
+      <div class="reviews-inner">
+        <div class="reviews-header">
+          <h2 class="section-title" id="reviews-heading">Отзывы</h2>
+          <div class="reviews-nav" aria-label="Листание отзывов">
+            <button type="button" class="reviews-btn reviews-btn-prev" id="reviewsPrev" aria-label="Предыдущий отзыв">‹</button>
+            <button type="button" class="reviews-btn reviews-btn-next" id="reviewsNext" aria-label="Следующий отзыв">›</button>
+          </div>
+        </div>
+        <div class="reviews-wrap" id="reviewsWrap">
+          <div class="reviews-track" id="reviewsTrack" aria-hidden="true">
+            <article class="review-card">
+              <p class="review-text">Заказывала 25 роз на годовщину — привезли вовремя, букет свежий и красивый. Спасибо!</p>
+              <span class="review-author">Марина</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Подарил девушке коробку «Сердце». Осталась в восторге, буду заказывать ещё.</p>
+              <span class="review-author">Андрей</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Букет для мамы на 8 Марта — доставили утром, как договаривались. Рекомендую.</p>
+              <span class="review-author">Елена К.</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Делали свадебный букет. Флорист подобрала идеально под платье. Всё супер.</p>
+              <span class="review-author">Анна и Дмитрий</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Заказывала 51 розу на день рождения. Привезли в красивой упаковке, цветы стояли больше недели.</p>
+              <span class="review-author">Ксения</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Очень понравилось, что помогли подобрать нежный микс под бюджет. Всё быстро и без навязчивости.</p>
+              <span class="review-author">Ирина</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Заказывал букет «Элегант» для коллеги. Доставили точно в интервал, получательница довольна.</p>
+              <span class="review-author">Сергей</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Попросила фото перед отправкой — прислали, всё как на сайте. Курьер вежливый, букет идеальный.</p>
+              <span class="review-author">Валерия</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Брал 1 розу в колбе как маленький комплимент. Выглядит очень аккуратно, упаковка приятная.</p>
+              <span class="review-author">Михаил</span>
+            </article>
+            <article class="review-card">
+              <p class="review-text">Доставка утром — спасли ситуацию, когда забыл про годовщину. Спасибо за скорость и качество.</p>
+              <span class="review-author">Роман</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consult-section consult-soft" id="consult">
+      <div class="container">
+        <div class="consult-grid">
+          <div class="consult-copy">
+            <h2 class="section-title">Подобрать букет</h2>
+            <p class="consult-text">Опишите повод и стиль (нежный/яркий/классика). Мы предложим 2–3 варианта и подскажем по стойкости и уходу.</p>
+            <div class="consult-badges" aria-label="Что вы получите">
+              <span class="hint-pill">Ответ в течение 10–20 минут</span>
+              <span class="hint-pill">Подбор под бюджет</span>
+              <span class="hint-pill">Открытка бесплатно</span>
+            </div>
+          </div>
+          <form class="consult-form consult-form-soft" id="consultForm" action="https://formspree.io/f/xeqwknqz" method="POST">
+            <input type="hidden" name="_subject" value="Заявка на подбор букета — Розы Брянск">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" placeholder="Повод, цвет и бюджет (необязательно)" rows="3"></textarea>
+            <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="policy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </div>
+        <p class="footer-copy">© Розы Брянск</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal-overlay" id="productModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Закрыть">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-footer">
+        <form class="cart-form" id="cartForm" action="https://formspree.io/f/xeqwknqz" method="POST">
+          <input type="hidden" name="_subject" value="Заказ букетов — Розы Брянск">
+          <input type="hidden" name="order_items" id="orderItemsInput">
+          <input type="hidden" name="order_total" id="orderTotalInput">
+          <input type="hidden" name="order_discount" id="orderDiscountInput">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="text" name="address" placeholder="Адрес доставки">
+          <textarea name="comment" placeholder="Время и комментарий" rows="2"></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seo.js"></script>
+  <script>
+    (function () {
+      if (typeof PRODUCTS === 'undefined') return;
+      var base = window.location.origin + (window.location.pathname.replace(/[^/]+$/, '') || '/');
+      var org = {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Розы Брянск',
+        url: base,
+        description: 'Доставка роз и букетов по Брянску. Свежие цветы, доставка в день заказа.',
+        address: { '@type': 'PostalAddress', addressLocality: 'Брянск', addressRegion: 'Брянская область' },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+7-4832-55-00-00',
+          contactType: 'customer service',
+          areaServed: 'RU',
+          availableLanguage: 'Russian'
+        }
+      };
+      var local = {
+        '@context': 'https://schema.org',
+        '@type': 'Florist',
+        name: 'Розы Брянск',
+        url: base,
+        telephone: '+7-4832-55-00-00',
+        address: { '@type': 'PostalAddress', streetAddress: 'ул. Красноармейская, д. 42', addressLocality: 'Брянск', addressRegion: 'Брянская область' },
+        openingHoursSpecification: [
+          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '08:00', closes: '20:00' }
+        ]
+      };
+      var items = PRODUCTS.map(function (p) {
+        return {
+          '@type': 'Product',
+          name: p.name,
+          description: p.description,
+          offers: { '@type': 'Offer', price: p.price, priceCurrency: 'RUB' }
+        };
+      });
+      var itemList = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Каталог букетов роз',
+        description: 'Букеты из роз: классика, премиум, свадебные, в коробке.',
+        numberOfItems: items.length,
+        itemListElement: items.map(function (item, i) {
+          return { '@type': 'ListItem', position: i + 1, item: item };
+        })
+      };
+      [org, local, itemList].forEach(function (data) {
+        var script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(data);
+        document.head.appendChild(script);
+      });
+    })();
+  </script>
+</body>
+</html>
